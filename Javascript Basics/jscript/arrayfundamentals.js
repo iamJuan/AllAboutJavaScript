@@ -3,6 +3,7 @@
 function runall(){
 	myArray();
 	multidimensionalarray();
+	lengthsOfString();
 }
 
 function myArray(){
@@ -12,10 +13,10 @@ function myArray(){
 	myArrays[2] = "blue balloon";
 	myArrays[3] = "pink balloon";
 
-	document.write(myArrays[0] +" ");
-	document.write(myArrays[1] +" ");
-	document.write(myArrays[2] +" ");
-	document.write(myArrays[3] +" ");
+	document.write(myArrays[0] +"<br/>");
+	document.write(myArrays[1] +"<br/>");
+	document.write(myArrays[2] +"<br/>");
+	document.write(myArrays[3] +"<br/>");
 	document.write("myArrays.length = "+myArrays.length);
 }
 
@@ -34,5 +35,16 @@ function multidimensionalarray(){
 	bestAlbumsByGenre[2][1] = "The Dead Milkmen:Big Lizard in my Backyard";
 	bestAlbumsByGenre[2][2] = "Patti Smith:Easter";
 
+	document.write("<br/>");
 	document.write(bestAlbumsByGenre[0][3]);
+}
+
+function lengthsOfString(){
+	var lengthsOfString = [2,4,1.5,80];
+
+	var totalLength = lengthsOfString[0] +
+	lengthsOfString[1] + lengthsOfString[2] +
+	lengthsOfString[3];
+	document.write("<br/>");
+	document.write(totalLength);
 }
